@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <AssemblyName>UncutSkillGemLvlReq</AssemblyName>
+    <Version>1.1.1</Version>
+    <OutputType>Library</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExileCore2">
+      <HintPath>$(exileCore2Package)\ExileCore2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GameOffsets2">
+      <HintPath>$(exileCore2Package)\GameOffsets2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <PackageReference Include="ImGui.NET" Version="1.90.0.1" />
+  </ItemGroup>
+</Project>
